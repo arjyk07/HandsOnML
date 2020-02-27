@@ -1,6 +1,7 @@
 # 참고사이트
 # https://github.com/rickiepark/handson-ml/blob/master/01_the_machine_learning_landscape.ipynb
 # https://lsjsj92.tistory.com/364
+# 시작
 
 # 파이썬 2와 파이썬 3 지원
 from __future__ import division, print_function, unicode_literals
@@ -11,6 +12,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import sklearn.linear_model
+
 
 def prepare_country_stats(oecd_bli, gdp_per_capita):
     oecd_bli = oecd_bli[oecd_bli["INEQUALITY"]=="TOT"]
