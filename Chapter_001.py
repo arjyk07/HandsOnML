@@ -28,9 +28,10 @@ def prepare_country_stats(oecd_bli, gdp_per_capita):
     return full_country_stats[["GDP per capita", 'Life satisfaction']].iloc[keep_indices]
 
 # 데이터 적재
-oecd_bli = pd.read_csv("oecd_bli_2015.csv", thousands=',')
-gdp_per_capita = pd.read_csv("gdp_per_capita.csv", thousands=',', delimiter='\t',
-                             encoding='latin1', na_values="n/a")
+oecd_bli = pd.read_csv("C:/Python/HandsOnML_code/datasets/oecd_bli_2015.csv", thousands=',')
+gdp_per_capita = pd.read_csv("C:/Python/HandsOnML_code/datasets/gdp_per_capita.csv"
+                             , thousands=',', delimiter='\t'
+                             , encoding='latin1', na_values="n/a")
 
 # 데이터 준비
 country_stats = prepare_country_stats(oecd_bli, gdp_per_capita)
@@ -51,4 +52,4 @@ model1.fit(X, y)
 # 키프로스에 대한 예측
 X_new = [[22587]] # 키프로스 1인당 GDP
 print(model.predict(X_new))     # 결과 [[5.96242338]]
-print(model1.predict(X_new))
+print(model1.predict(X_new))    # 결과 [[5.76666667]]
