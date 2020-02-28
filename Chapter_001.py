@@ -1,7 +1,7 @@
 # 참고사이트
 # https://github.com/rickiepark/handson-ml/blob/master/01_the_machine_learning_landscape.ipynb
 # https://lsjsj92.tistory.com/364
-# 20200228
+# 업데이트날짜 : 20200228
 
 
 # 파이썬 2와 파이썬 3 지원
