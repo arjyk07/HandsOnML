@@ -1,7 +1,6 @@
 # 참고사이트
 # https://github.com/rickiepark/handson-ml/blob/master/01_the_machine_learning_landscape.ipynb
 # https://lsjsj92.tistory.com/364
-# 시작
 
 # 파이썬 2와 파이썬 3 지원
 from __future__ import division, print_function, unicode_literals
@@ -12,7 +11,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import sklearn.linear_model
-
+import sklearn.neighbors
 
 def prepare_country_stats(oecd_bli, gdp_per_capita):
     oecd_bli = oecd_bli[oecd_bli["INEQUALITY"]=="TOT"]
@@ -42,10 +41,12 @@ plt.show()
 
 # 선형 모델 선택
 model = sklearn.linear_model.LinearRegression()
-
+model1 = sklearn.neighbors.KNeighborsRegressor(n_neighbors=3)
 # 모델 훈련
 model.fit(X, y)
+model1.fit(X, y)
 
 # 키프로스에 대한 예측
 X_new = [[22587]] # 키프로스 1인당 GDP
 print(model.predict(X_new))     # 결과 [[5.96242338]]
+print(model1.predict(X_new))
