@@ -1,6 +1,8 @@
 # 참고사이트
 # https://github.com/rickiepark/handson-ml/blob/master/01_the_machine_learning_landscape.ipynb
 # https://lsjsj92.tistory.com/364
+# 20200228
+
 
 # 파이썬 2와 파이썬 3 지원
 from __future__ import division, print_function, unicode_literals
