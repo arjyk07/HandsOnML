@@ -1,5 +1,5 @@
 # Chapter_002
-# https://github.com/rickiepark/handson-ml
+# https://github.com/rickiepark/handson-ml/blob/master/02_end_to_end_machine_learning_project.ipynb
 # 추천강의 : https://programmers.co.kr/learn/courses/21
 # 한글폰트 : # https://programmers.co.kr/learn/courses/21/lessons/950#
 # 업데이트날짜 : 20200301
