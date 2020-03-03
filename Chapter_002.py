@@ -165,6 +165,10 @@ split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
 for train_index, test_index in split.split(housing, housing["income_cat"]):
     train_set_strat = housing.loc[train_index]
     test_set_strat = housing.loc[test_index]
+train_index
+test_index
+train_set_strat
+
 train_set_strat["income_cat"].value_counts() / len(train_set_strat)
 test_set_strat["income_cat"].value_counts() / len(test_set_strat)
 
