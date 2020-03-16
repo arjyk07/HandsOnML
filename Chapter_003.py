@@ -8,13 +8,14 @@ from __future__ import division, print_function, unicode_literals
 # 공통
 import numpy as np
 import os
+import matplotlib
 import matplotlib.pyplot as plt
+from sklearn.datasets import fetch_openml
+
 
 
 # 맷플롯립 설정
 # %matplotlib inline
-import matplotlib
-import matplotlib.pyplot as plt
 plt.rcParams['axes.labelsize'] = 14
 plt.rcParams['xtick.labelsize'] = 12
 plt.rcParams['ytick.labelsize'] = 12
@@ -42,7 +43,7 @@ def save_fig(fig_id, tight_layout=True):
 
 
 # MNIST 데이터셋 불러오기
-from sklearn.datasets import fetch_openml
+
 mnist = fetch_openml('mnist_784', version=1)
 mnist
 
