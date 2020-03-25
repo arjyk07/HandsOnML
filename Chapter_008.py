@@ -1,4 +1,4 @@
-# Chapter_008
+# Chapter_008_차원축소
 # https://github.com/rickiepark/handson-ml/blob/master/08_dimensionality_reduction.ipynb
 # 업데이트날짜 : 20200325
 
