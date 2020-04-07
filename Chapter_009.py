@@ -16,11 +16,6 @@ tf.__version__
 import numpy as np
 # import os
 
-from tensorflow.keras import backend as K
-from tensorflow.keras.models import Sequential, load_model
-from tensorflow.keras.layers import LSTM, Dense, RepeatVector, Masking, TimeDistributed
-from tensorflow.keras.utils import plot_model
-
 # 일관된 출력을 위해 유사난수 초기화
 from tensorflow.python.framework import ops
 
